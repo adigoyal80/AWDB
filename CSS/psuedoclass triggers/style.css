@@ -1,0 +1,25 @@
+h1:hover {
+  background-color: purple;
+}
+
+button:hover {
+  color: white;
+}
+
+button:focus {
+  border-radius: 10px;
+  background-color: orange;
+}
+
+button:active {
+  background-color: aqua;
+  font-size: 30px;
+}
+
+h1:active, p:active {
+  color: yellow;
+}
+
+input:focus {
+  background: teal;
+}

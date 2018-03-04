@@ -1,0 +1,23 @@
+p {
+  width: 70px;
+  height: 70px;
+  font-size:17px;
+  line-height: 70px;
+  background: purple;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+}
+
+.box:hover {
+  background: red;
+  transform-origin: top left;
+}
+
+.animated {
+  /* transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  transition:  background .5s ease-in;
+  
+}

@@ -1,0 +1,42 @@
+/* 
+p {
+  width: 50px;
+  height: 50px;
+  background-color: #1abc9c;
+}
+
+p.move-right {
+  background-color: #3498db;
+  transform: translateX(100px);
+}
+
+p.move-down {
+  background-color: #f1c40f;
+  transform: translateY(100px);
+} */
+
+/* p:hover {
+  transform: translate(20px, 20px);
+} */
+
+p {
+  width: 50px;
+  height: 50px;
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  border: 2px solid #2c3e50;
+}
+/* 
+.transformed {
+  background-color: #1abc9c;
+  transform: scale(2);
+  transform-origin: left top;
+} */
+
+.transformed {
+  background-color: #9b59b6;
+  -webkit-transform: scale(0.5) rotate(45deg);
+          transform: scale(0.5) rotate(45deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
