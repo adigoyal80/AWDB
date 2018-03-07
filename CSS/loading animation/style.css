@@ -1,0 +1,53 @@
+.container {
+  margin: 4em;
+  text-align: center;
+}
+
+.loader {
+  margin: auto;
+  border: 16px solid #bdc3c7;
+  width: 120px;
+  height: 120px;
+  border-top-color: teal;
+  border-bottom-color: blue;
+  border-radius: 50%;
+  animation: coloredspin 4s infinite linear;
+}
+
+@keyframes coloredspin {
+  0% {
+   
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    border-top-color: red;
+    border-bottom-color: red;
+  }
+  50% {
+    border-top-color: green;
+    border-bottom-color: green;
+    transform: rotate(360deg) scale(1.05);
+  }
+  75% {
+    border-top-color: greenyellow;
+    border-bottom-color: greenyellow;
+  }
+  100% {
+    
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+h2 {
+  animation: appear 1s 3s forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
