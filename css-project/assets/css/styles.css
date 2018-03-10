@@ -1,0 +1,100 @@
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.jumbotron {
+  background: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width:100vw;
+  height: 640px;
+  display:flex;
+  flex-direction: column;
+}
+
+.jumbotron nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Quicksand;
+  text-decoration: none;
+}
+
+.jumbotron .hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans";
+  color:white;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.hero-container h1, .hero-container h3, .hero-container button{
+  margin:5px;
+}
+
+.hero-container button {
+  background-color: darkblue;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-container button:hover {
+  background-color: blue;
+}
+
+.hero-container button:active {
+  border:lightblue 1px solid;
+}
+
+.hero-container button a{
+  font-family: 'Open Sans';
+  color:white;
+  text-decoration: none;
+}
+
+.destinations {
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding:40px;
+  font-family: 'Open Sans';
+}
+
+.destinations .divider {
+  border-bottom: 2px solid blue;
+  width: 200px;
+  margin: 20px 0px 40px 0px;
+}
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  height: 200px;
+  padding:10px;
+}
+
+.square{
+  width: 200px;
+  background-size: contain
+}

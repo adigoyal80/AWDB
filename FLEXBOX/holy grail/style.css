@@ -64,6 +64,6 @@ footer {
     order:0;
   }
   header, footer {
-    flex-basis: 50px;
+    flex-basis: 50px; 
   }
 }
