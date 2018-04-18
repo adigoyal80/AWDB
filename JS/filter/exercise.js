@@ -23,10 +23,9 @@ Examples:
 */
 
 function find(arr, searchValue){
-    let result = arr.filter((el) => {
+    return arr.filter((el) => {
         return el === searchValue;
-    })
-    return result.length === 0 ? undefined : result[0];
+    })[0]
 }
 
 /*
@@ -37,10 +36,9 @@ Examples:
 */
 
 function findInObj(arr, key, searchValue){
-    let found = arr.filter((el) => {
-        return key in el && el[key] === searchValue;
-    })
-    return found.length === 0 ? undefined : found[0];
+    return arr.filter((el) => {
+        return el[key] === searchValue;
+    })[0]
 }
 
 
@@ -55,14 +53,17 @@ Examples:
 
 function removeVowels(str){
     let vowels = 'aeiou';
-    let newStr = '';
-    Array.from(str).filter((e) => {
-        e = e.toLowerCase();
-        if(vowels.indexOf(e) === -1){
-            newStr += e;
-        }
-    })
-    return newStr;
+    // let newStr = '';
+    // Array.from(str).filter((e) => {
+    //     e = e.toLowerCase();
+    //     if(vowels.indexOf(e) === -1){
+    //         newStr += e;
+    //     }
+    // })
+    // return newStr;
+    return str.toLowerCase().split("").filter(function(val){
+        return vowels.indexOf(val) === -1
+    }).join('');
 }
 
 
@@ -75,9 +76,6 @@ Examples:
 */
 
 function doubleOddNumbers(arr){
-    return arr.filter((el) => {
-        return el % 2 !== 0;
-    }).map((el) => {
-        return el * 2; 
-    })
+    return arr.filter((el) => el % 2 !== 0)
+              .map((el) =>  el * 2)
 }
