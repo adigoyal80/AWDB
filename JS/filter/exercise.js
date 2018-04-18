@@ -8,7 +8,7 @@ Examples:
 function filterByValue(arr, key){
     return arr.filter((el) => {
         if(key in el){
-            return el
+            return el;
         }
     })
 }
@@ -26,7 +26,7 @@ function find(arr, searchValue){
     let result = arr.filter((el) => {
         return el === searchValue;
     })
-    return result.length === 0 ? undefined : result
+    return result.length === 0 ? undefined : result[0];
 }
 
 /*
@@ -38,7 +38,7 @@ Examples:
 
 function findInObj(arr, key, searchValue){
     let found = arr.filter((el) => {
-        return key in el && el[key] === searchValue
+        return key in el && el[key] === searchValue;
     })
     return found.length === 0 ? undefined : found[0];
 }
@@ -57,7 +57,7 @@ function removeVowels(str){
     let vowels = 'aeiou';
     let newStr = '';
     Array.from(str).filter((e) => {
-        e = e.toLowerCase()
+        e = e.toLowerCase();
         if(vowels.indexOf(e) === -1){
             newStr += e;
         }
@@ -76,7 +76,7 @@ Examples:
 
 function doubleOddNumbers(arr){
     return arr.filter((el) => {
-        return el % 2 != 0;
+        return el % 2 !== 0;
     }).map((el) => {
         return el * 2; 
     })
